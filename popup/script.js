@@ -19,7 +19,7 @@ function listenForClicks() {
 			break;
 			
 			case "action2":
-				var myAlert = browser.i18n.getMessage("action2");
+				var myAlert = chrome.i18n.getMessage("action2");
 				console.log('**ALERT**:'+myAlert);
 			  chrome.tabs.executeScript(tabs[0].id, {
 			  code: `document.querySelectorAll(".NePasImprimer").forEach(function (element ,index) {element.classList.remove("NePasImprimer");}); document.querySelectorAll(".ThemeEmeraude").forEach(function (element ,index) {element.classList.remove("ThemeEmeraude");}); document.querySelectorAll(".SansSelectionTexte").forEach(function (element ,index) {element.classList.remove("SansSelectionTexte");}); document.querySelectorAll(".BloquerInterface").forEach(function (element ,index) {element.classList.remove("BloquerInterface");}); document.body.innerHTML += '<div style="position:absolute;width:100%;height:100%;opacity:0.3;z-index:100;background:#000;"></div>'; window.alert('`+myAlert+`');`
@@ -62,7 +62,7 @@ function listenForClicks() {
         .then(courseActions)
         .catch(reportError);
 		*/
-		browser.tabs.query({
+		chrome.tabs.query({
     active: true,
     currentWindow: true
 }, function(tabs) {
