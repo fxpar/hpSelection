@@ -10,29 +10,31 @@ function listenForClicks() {
 
 		switch (e.target.id) {
 			
-			case "selectionnerPage":
-				var myAlert = chrome.i18n.getMessage("cocherAlert");
+			case "action1":
+				var myAlert = chrome.i18n.getMessage("action1");
 				console.log('**ALERT**:'+myAlert);
 			  chrome.tabs.executeScript(tabs[0].id, {
-			  code: `document.getElementById("div").classList.remove("NePasImprimer"); document.getElementById("div").classList.remove("ThemeEmeraude"); document.getElementById("div").classList.remove("SansSelectionTexte"); document.getElementById("div").classList.remove("BloquerInterface"); document.body.innerHTML += '<div style="position:absolute;width:100%;height:100%;opacity:0.3;z-index:100;background:#000;"></div>'; window.alert('selectionner');`
+			  code: `document.getElementById("div").classList.remove("NePasImprimer"); document.getElementById("div").classList.remove("ThemeEmeraude"); document.getElementById("div").classList.remove("SansSelectionTexte"); document.getElementById("div").classList.remove("BloquerInterface"); document.body.innerHTML += '<div style="position:absolute;width:100%;height:100%;opacity:0.3;z-index:100;background:#000;"></div>'; window.alert('`+myAlert+`');`
 			});
 			break;
 			
-			case "deselectionnerPage":
-				var myAlert = chrome.i18n.getMessage("decocherAlert");
+			case "action2":
+				var myAlert = browser.i18n.getMessage("action2");
 				console.log('**ALERT**:'+myAlert);
 			  chrome.tabs.executeScript(tabs[0].id, {
-			  code: `document.querySelectorAll(".NePasImprimer").forEach(function (element ,index) {element.classList.remove("NePasImprimer");}); document.querySelectorAll(".ThemeEmeraude").forEach(function (element ,index) {element.classList.remove("ThemeEmeraude");}); document.querySelectorAll(".SansSelectionTexte").forEach(function (element ,index) {element.classList.remove("SansSelectionTexte");}); document.querySelectorAll(".BloquerInterface").forEach(function (element ,index) {element.classList.remove("BloquerInterface");}); document.body.innerHTML += '<div style="position:absolute;width:100%;height:100%;opacity:0.3;z-index:100;background:#000;"></div>'; window.alert('déselectionner');`
+			  code: `document.querySelectorAll(".NePasImprimer").forEach(function (element ,index) {element.classList.remove("NePasImprimer");}); document.querySelectorAll(".ThemeEmeraude").forEach(function (element ,index) {element.classList.remove("ThemeEmeraude");}); document.querySelectorAll(".SansSelectionTexte").forEach(function (element ,index) {element.classList.remove("SansSelectionTexte");}); document.querySelectorAll(".BloquerInterface").forEach(function (element ,index) {element.classList.remove("BloquerInterface");}); document.body.innerHTML += '<div style="position:absolute;width:100%;height:100%;opacity:0.3;z-index:100;background:#000;"></div>'; window.alert('`+myAlert+`');`
 			});
 			break;
 			
-						case "action3":
-				var myAlert = chrome.i18n.getMessage("decocherAlert");
+			case "action3":
+				var myAlert = chrome.i18n.getMessage("action3");
 				console.log('**ALERT**:'+myAlert);
 			  chrome.tabs.executeScript(tabs[0].id, {
-			  code: `document.getElementsByTagName("BODY")[0].innerHTML = document.getElementById("GInterface.Instances[1].Instances[10]").innerHTML; document.getElementById("GInterface.Instances[1].Instances[10]_Zone_0").style.height =""; window.alert('déselectionner');`
+			  code: `document.getElementsByTagName("BODY")[0].innerHTML = document.getElementById("GInterface.Instances[1].Instances[10]").innerHTML; document.getElementById("GInterface.Instances[1].Instances[10]_Zone_0").style.height =""; window.alert('`+myAlert+`');`
 			});
 			break;
+			
+
 
 		}
 		
