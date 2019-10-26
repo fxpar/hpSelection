@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "HPsel",
+    "message": "HPselection",
     "description": "Name of the extension."
   },
 
@@ -15,51 +15,25 @@
   
 
 
-     "cocherAlert": {
+     "action1": {
+    "message": "You should be able to select some texte with your mouse \\n and do a right click everywhere.",
+    "description": "Title of the click notification."
+  }, 
+  
+    "action2": {
+    "message": "You should be able to select some texte with your mouse \\n and do a right click everywhere.",
+    "description": "Title of the click notification."
+  }, 
+
+    "action3": {
     "message": "You can now do a Ctrl+a to select everything. \\n Better paste it as raw text (as value) in Excel.",
-    "description": "Title of the click notification."
-  }, 
-  
-       "decocherAlert": {
-    "message": "You can now do a Ctrl+a to select everything. \\n Better paste it as raw text (as value) in Excel.",
-    "description": "Title of the click notification."
-  }, 
-  
-       "inverserAlert": {
-    "message": "n+' boxes have been inversed\\n'+c+' were already ticked\\n'+d+' were unticked\\n'+t+' = total\\n\\n(check console for detail)' ",
-    "description": "Title of the click notification."
-  }, 
-  
-"chercherListeAlert": {
-    "message": "n+' codes have been searched\\n'+tr+'  found\\n'+ntr+' not found\\n-----\\n'+c+' were already ticked\\n'+d+' were unticked\\n'+t+' in total' ",
-    "description": "Title of the click notification."
-  }, 
-  
-         "afficherAlert": {
-    "message": "n+' courses have been displayed and memorised' ",
-    "description": "Title of the click notification."
-  }, 
-  
-   "consulterConsoleAlert": {
-    "message": "check console for details",
     "description": "Title of the click notification."
   }, 
   
      "aucunCoursAlert": {
     "message": "No course found\\nSorry...😢",
     "description": "Title of the click notification."
-  }, 
-  
-
-
-  "errorContent": {
-    "message": "Can't select courses on this web page. Try a different page.",
-    "description": "Title of the click notification."
-  },
-  
-
-  "notificationTitle": {
-    "message": "Click notification",
-    "description": "Title of the click notification."
   }
+  
+
 }

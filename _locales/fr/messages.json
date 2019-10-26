@@ -1,6 +1,6 @@
 {
   "extensionName": {
-    "message": "HPsel",
+    "message": "HPselection",
     "description": "Name of the extension."
   },
 
@@ -15,54 +15,26 @@
   },
   
 
+     "action1": {
+    "message": "vous pouvez maintenant faire ctrl+a pour tout sélectionner \\n Collez de préférence en texte brut (en valeur) dans Excel.",
+    "description": "Title of the click notification."
+  }, 
   
+     "action2": {
+    "message": "vous pouvez maintenant faire ctrl+a pour tout sélectionner \\n Collez de préférence en texte brut (en valeur) dans Excel.",
+    "description": "Title of the click notification."
+  }, 
 
-  
-  
-  
-     "cocherAlert": {
+     "action3": {
     "message": "vous pouvez maintenant faire ctrl+a pour tout sélectionner \\n Collez de préférence en texte brut (en valeur) dans Excel.",
     "description": "Title of the click notification."
   }, 
   
-       "decocherAlert": {
-    "message": "vous pouvez maintenant faire ctrl+a pour tout sélectionner \\n Collez de préférence en texte brut (en valeur) dans Excel.",
-    "description": "Title of the click notification."
-  }, 
-  
-       "inverserAlert": {
-    "message": "n+' cases ont été inversées\\n'+c+' étaient déja cochées\\n'+d+' étaient décochées\\n'+t+' au total' ",
-    "description": "Title of the click notification."
-  }, 
-  
-         "chercherListeAlert": {
-    "message": "n+' codes ont été cherchés\\n'+tr+'  trouvé(s)\\n'+ntr+' non trouvé(s)\\n-----\\n'+c+' étaient cochées\\n'+d+'  décochées\\n'+t+' au total' ",
-    "description": "Title of the click notification."
-  }, 
-  
-         "afficherAlert": {
-    "message": "n+' cours ont été affiché(s) et mémorisé(s)' ",
-    "description": "Title of the click notification."
-  }, 
-  
-  
-     "consulterConsoleAlert": {
-    "message": "consultez la console pour plus de détails",
-    "description": "Title of the click notification."
-  }, 
   
        "aucunCoursAlert": {
     "message": "Aucun cours trouvé\\nDésolé...😢",
     "description": "Title of the click notification."
   }
   
-
-
-  
-
- 
-
-
-
 
 }
